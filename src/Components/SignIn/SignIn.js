@@ -29,7 +29,7 @@ const SignIn = () => {
           setEmail(localStorage.getItem('email'));
           setPassword(localStorage.getItem('password'));
         }
-       },[]);
+    },[]);
 
     const userVerification = () => {
         if (
@@ -44,48 +44,48 @@ const SignIn = () => {
     };
 
     return (
-        <div className='blockSign'>
-            <div>{isLogin ? <Redirect to='/Welcome' /> : null}</div>
-            <div className='imgLogo'>
-                <img src={image} alt='logo' />
-            </div>
+      <div className='blockSign'>
+        <div>{isLogin ? <Redirect to='/Homepage' /> : null}</div>
+          <div className='imgLogo'>
+            <img src={image} alt='logo' />
+          </div>
             <p>Sign in</p>
             <div>
-                <form className='loginApp'>
-                    <input
-                        type='text'
-                        name='email'
-                        onChange={userInformation}
-                        value={email}
-                        placeholder='Email Address *'
-                    />
-                    <input 
-                        type='password'
-                        name='password'
-                        onChange={userInformation}
-                        value={password}
-                        placeholder='Password *'
-                    />
-                    <label>
-                        <input
-                            type='checkbox'
-                            name='rememberMe'
-                            onChange={userInformation}
-                            checked={rememberMe}
-                        />
-                        <span>Remember me</span>
-                    </label>
-                    <button type='submit' onClick={userVerification}>
-                        SIGN IN
-                    </button>
-                </form>
-            <div className='loginInf'>
+              <form className='loginApp'>
+                <input
+                  name='email'
+                  placeholder='Email Address *'
+                  type='text'
+                  value={email}
+                  onChange={userInformation}                
+                />
+                <input 
+                name='password'
+                placeholder='Password *'
+                type='password'
+                value={password}
+                onChange={userInformation}               
+                />
+                <label>
+                  <input
+                    checked={rememberMe}
+                    name='rememberMe'
+                    type='checkbox'
+                    onChange={userInformation}
+                  />
+                  <span>Remember me</span>
+                </label>
+                <button type='submit' onClick={userVerification}>
+                  SIGN IN
+                </button>
+              </form>
+              <div className='loginInf'>
                 <div>Forgot password?</div>
-                <Link to='/SignUp'>Don`t have an account? Sign Up</Link>
+                  <Link to='/SignUp'>Don`t have an account? Sign Up</Link>
             </div>
-            </div>
-            <div className='copyright'>Copyright © Your Website 2020.</div>
-        </div>
+          </div>
+          <div className='copyright'>Copyright © Your Website 2020.</div>
+      </div>
     );
 };
 

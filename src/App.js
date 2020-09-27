@@ -3,8 +3,7 @@ import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import SignIn from './Components/SignIn/SignIn';
 import SignUp from './Components/SignUp/SignUp';
-import Welcome from './Components/Welcome/Welcome';
-
+import Homepage from './Components/Homepage/Homepage';
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
           </Route>
           <Route path='/SignUp' component={SignUp} />
           <Route path='/SignIn' component={SignIn} />
-          <Route path='/Welcome' component={Welcome} />
+          <Route path='/Homepage' component={Homepage} />
         </Switch>
       </div>
     </HashRouter>

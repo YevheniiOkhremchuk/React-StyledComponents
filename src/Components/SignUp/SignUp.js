@@ -41,7 +41,6 @@ const SignUp = () => {
     };
 
     const registrationUser = (e) => {
-      e.preventDefault();
         if (
           firstName.match(RegExpName) &&
           lastName.match(RegExpName) &&
@@ -60,72 +59,70 @@ const SignUp = () => {
     };
    
     return (
-        <div className='blockSign'>
-            <div className='imgLogo'>
-                <img src={image} alt='logo' />
-            </div>
-            <p>Sign up</p>
-            
-            <div>
-                <form className='loginApp'>
-                    <div className='inputName'>                  
-                    <input
-                        type='text'
-                        name='firstName'
-                        onChange={registrationData}
-                        value={firstName}
-                        placeholder='First Name *'
-                        required
-                    />
-                    <input
-                        type='text'
-                        name='lastName'
-                        onChange={registrationData}
-                        value={lastName}
-                        placeholder='Last Name *'
-                        required
-                    />
-                    </div>
-                    <input
-                        type='text'
-                        name='email'
-                        onChange={registrationData}
-                        value={email}
-                        placeholder='Email Address*'
-                        required
-                    />
-                    <input
-                        type='password'
-                        name='password'
-                        onChange={registrationData}
-                        value={password}
-                        placeholder='Password *'
-                        required
-                    />
-                    <label>
-                        <input
-                            type='checkbox'
-                            name='updates'
-                            onChange={registrationData}
-                            checked={updates}
-                        />
-                        <span>
-                            I want to receive inspiration, marketing promotions and updates
-                            via email.
-                        </span>
-                    </label>
-                    <button type='submit' onClick={registrationUser}>
-                        SIGN UP
-                    </button>
-                </form>
-                <div className='loginInf'>
-                <div></div>
-                    <Link to='/SignIn'>Already have an account? Sign in</Link>
-                </div>
-                </div>
-            <div className='copyright'>Copyright © Your Website 2020.</div>
+      <div className='blockSign'>
+        <div className='imgLogo'>
+          <img src={image} alt='logo' />
         </div>
-        
+          <p>Sign up</p>
+          <div>
+            <form className='loginApp'>
+              <div className='inputName'>                  
+                <input
+                  name='firstName'
+                  placeholder='First Name *'
+                  required
+                  type='text'
+                  value={firstName}
+                  onChange={registrationData}                       
+                />
+                <input
+                  name='lastName'
+                  placeholder='Last Name *'
+                  required
+                  type='text'
+                  value={lastName}      
+                  onChange={registrationData}      
+                />
+              </div>
+                <input
+                  name='email'        
+                  placeholder='Email Address*'
+                  required       
+                  type='text'
+                  value={email}      
+                  onChange={registrationData} 
+                />
+                <input
+                  name='password'      
+                  placeholder='Password *'
+                  required     
+                  type='password'
+                  value={password}      
+                  onChange={registrationData}  
+                />
+                <label>
+                  <input
+                    checked={updates}
+                    name='updates'       
+                    type='checkbox'  
+                    onChange={registrationData}   
+                  />
+                  <span>
+                    I want to receive inspiration, marketing promotions and updates
+                    via email.
+                  </span>
+                </label>
+                <button type='submit' onClick={registrationUser}>
+                  SIGN UP
+                </button>
+            </form>
+            <div className='loginInf'>
+              <div></div>
+                <Link to='/SignIn'>Already have an account? Sign in</Link>
+            </div>
+          </div>
+          <div className='copyright'>Copyright © Your Website 2020.</div>
+      </div> 
     );
 };
 
