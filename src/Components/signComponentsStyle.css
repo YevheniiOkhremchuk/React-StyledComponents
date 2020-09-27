@@ -1,0 +1,86 @@
+.blockSign {
+    display: flex;
+    width: 300px;
+    min-height: 350px;
+    margin: 50px auto 0;
+    padding: 40px;
+    flex-direction: column;
+    background-color: #171616;
+    color: #cecece;
+}
+.imgLogo {
+    background-color: #f48fb2;
+    display: flex;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 40px;
+}
+.imgLogo img {
+    width: 15px;
+    height: 15px;
+}
+p {
+    font-size: 18px;
+    margin: 8px 0 11px 0;
+    font-weight: 600;
+}
+.inputName {
+    display: flex;
+    justify-content: space-between;
+}
+.inputName * {
+    width: 40%;
+}
+.loginApp {
+    display: flex;
+    flex-direction: column;
+}
+.loginApp input {
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 12px 10px;
+    border: 1px solid gray;
+    background-color: inherit;
+    color: #cecece;
+}
+label {
+    display: flex;
+    font-weight: 500; 
+    align-items: center;
+    cursor: pointer;
+} 
+span {
+    margin-left: 10px;
+    font-size: 13px;
+    text-align: left;
+}
+button {
+    background-color: #93c1e6;
+    border-radius: 5px;
+    padding: 7px;
+    color: #312d2d;
+    margin-top: 20px ;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.loginInf {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10.6px;
+    margin-top: 8px;
+    font-weight: 700;
+  }
+.loginInf * {
+    color: #78a8cf;
+    cursor: pointer;
+    text-decoration: none;
+}
+.loginInf *:hover {
+    text-decoration: underline;
+}
+.copyright {
+    font-size: 9px;
+    color: grey;
+    margin-top: 40px;
+}
