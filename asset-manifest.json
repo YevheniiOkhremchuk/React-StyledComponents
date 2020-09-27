@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-StyledComponents/static/css/main.3febc991.chunk.css",
+    "main.js": "/React-StyledComponents/static/js/main.2bbad2dd.chunk.js",
+    "main.js.map": "/React-StyledComponents/static/js/main.2bbad2dd.chunk.js.map",
+    "runtime-main.js": "/React-StyledComponents/static/js/runtime-main.0f39dc41.js",
+    "runtime-main.js.map": "/React-StyledComponents/static/js/runtime-main.0f39dc41.js.map",
+    "static/js/2.eececfee.chunk.js": "/React-StyledComponents/static/js/2.eececfee.chunk.js",
+    "static/js/2.eececfee.chunk.js.map": "/React-StyledComponents/static/js/2.eececfee.chunk.js.map",
+    "index.html": "/React-StyledComponents/index.html",
+    "precache-manifest.5dcf0aea2890f68efe6df11cec6138f4.js": "/React-StyledComponents/precache-manifest.5dcf0aea2890f68efe6df11cec6138f4.js",
+    "service-worker.js": "/React-StyledComponents/service-worker.js",
+    "static/css/main.3febc991.chunk.css.map": "/React-StyledComponents/static/css/main.3febc991.chunk.css.map",
+    "static/js/2.eececfee.chunk.js.LICENSE.txt": "/React-StyledComponents/static/js/2.eececfee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f39dc41.js",
+    "static/js/2.eececfee.chunk.js",
+    "static/css/main.3febc991.chunk.css",
+    "static/js/main.2bbad2dd.chunk.js"
+  ]
+}
