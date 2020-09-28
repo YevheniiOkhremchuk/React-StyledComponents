@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import image from '../../image/padlock.png';
-import '../signComponentsStyle.css';
+import '../Style.css';
 
 const SignIn = () => {
     const [email, setEmail] = useState('');

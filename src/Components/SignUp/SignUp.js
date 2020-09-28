@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import image from '../../image/padlock.png';
-import '../signComponentsStyle.css';
+import '../Style.css';
 
 const SignUp = () => {
     const [firstName, setFirstName] = useState('');
